@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <link rel = "stylesheet" href = "main.css"> </link>
+   <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lato:400|Raleway&display=swap" rel="stylesheet">
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+</head>
+
+<body onload = "typeWriter()">
+
+  <div class = "loadingPage">
+
+    <h1> <center> Digital Humanity </center> </h1>
+    <div>
+
+    <h2 id = "name"> </h2>
+   </div>
+
+   <div class = "menu" >
+
+       <li> <a href = "#scholar"> Academics</a> </li>
+       <li>   | </li>
+       <li> <a href = "#worker"> Portfolio </a>   </li>
+       <li>   | </li>
+       <li> <a href= "GW-Resume.pdf"> Resume </a>   </li>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+<section id = "scholar">
+  <div class= "row">
+
+
+
+  <div class= "leftColumn sticky " id = "coverPage" style = "background-color: rgb(227,70,73);">
+
+
+    <center style = "font-family:'alex brush',sans-serif;margin-top:30%;font-size: 3.6em;color:white"> Education </center>
+    <center class = "workMenu" style = "margin-top: 40%;" >
+
+      <li style = "color:white;">  <a href = "#college"> School </a></li>
+      <li style = "color:white;">   /</li>
+      <li style = "color:white;">  <a href = "#bd"> Courses </a>   </li>
+
+
+
+   </center>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class= "rightColumn" id = "Content" style = "background-color:rgb(242,242,242); scroll-behavior: smooth;">
+
+
+
+   <div id = "college" class = "wrapper">
+      <img id = school src = "lib4.jpg" width = 100% height = 100%>
+      <div class = "overlay">
+        <div class = "content">
+                <p>College: Washington University in St.Louis </p>
+                <p>Majors: Economics  & Computer Science </p>
+                <p>GPA: 3.8 / 4.0</p>
+        </div>
+      </div>
+  </div>
+
+
+  <div id = "bd" class = "wrapper">
+     <img id = school src = "lib3.jpg" width = 100% height = 100%>
+     <div class = "overlay">
+
+     </div>
+
+     <div class = "course-breakdown">
+             <center> <p style = "padding-right:30px;"> Course Breakdown</p> </center>
+             <img src = "ffbd.png" width = 100% >
+     </div>
+
+
+  </div>
+
+
+
+
+
+
+
+           <!-- <center style = "margin-top:10%; font-size: 1.2em; font-family:'Lato',sans-serif;"> Undergraduate Course Breakdown</center>
+           <div class = "uwrapper">
+             <div class = "topCourse" id = "cs">
+                <p style = "font-family: 'Lato',sans-serif;margin-left: 5px;font-size:10px;"> Computer Science </p>
+             </div>
+             <div class = "topCourse" id = "econ">
+                <p style = "font-family: 'Lato',sans-serif;margin-left: 5px;font-size:10px;"> Art/Drama </p>
+             </div>
+           </div>
+           <div class = "dwrapper">
+             <div class = "downCourse" id = "humanity">
+                 <p style = "font-family: 'Lato',sans-serif;margin-left: 5px;font-size:10px;"> Economics </p>
+             </div>
+             <div class = "downCourse" id = "language">
+                  <p style = "font-family: 'Lato',sans-serif;margin-left: 5px;font-size:10px;"> French </p>
+            </div>
+           </div> -->
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<section id = "worker">
+<div class= "row">
+ <div class= "leftColumn" id = "coverPage" style = "background-color:white;">
+        <center style = "font-family:'alex brush',sans-serif;margin-top:60%;font-size: 3.6em;"> Portfolio </center>
+        <center class = "workMenu" style = "margin-top: 10%;" >
+
+            <li>  <a href = "#nba_fortune"> NBA Fortune </a></li>
+            <li>   /</li>
+            <li>  <a href = "#rikai"> Rikai Labs </a>   </li>
+            <li>   /</li>
+            <li>  <a href = "#uber"> TED </a>  </li>
+            <li>   /</li>
+            <li>  <a href = "#gameWatch"> NBA Gamewatch </a>  </li>
+       </center>
+       <button class ="returnButton" id = "returnButton" onclick = closeNBAFortune() style = "display:none;"> X </button>
+
+ </div>
+
+  <div class= "rightColumn" id = "Content" style = "background-color: rgb(228,227,227);scroll-behavior:smooth;">
+
+         <div id = nba_fortune class = "box" style = "z-index:1;" >
+            <img class = "workPic" id =  "workPic" src ="nba_main.jpg" style ="width:100%; height:100%;margin-top:0;">
+            <div class = "overlay">
+
+            </div>
+
+            <div class = "product-description">
+                    <p> NBA Fortune</p>
+                    <button onclick = load()> See Details </button>
+            </div>
+
+         </div>
+
+         <div class = "workText" id = "nba" style = "display:none;width = 100%;background-color:white;z-index:2;">
+
+           <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+             <!-- Overview<br> <br> -->
+             <span style = "font-size: 23px;font-weight:900;"> NBA Fortune </span> is a gamified investment app that allows users to trade NBA player stocks. In this app, each active NBA player is represented as a stock. The stock price is a function of plaers'individual on-court performance and team overall win/loss.
+           </p>
+
+
+           <div id = "UI" style = "background-color: rgb(228,228,228);text-align:center;"> <img src = "nba_fortune.jpg" height = 68% ></div>
+
+           <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+             <span style = "font-size: 25px;font-weight:900;">Background </span><br><br>
+             During my internship at NBA, a fellow intern named Stan and I came up with this app idea. We believed that the app could offer NBA fans an exciting digital experience. It would make the fans stay more engaged with the NBA season as they make investments with virtual currency.  <br> <br>
+             After I returned back to school in fall, I shared this app idea with three friends from my iOS App Development class and invited them to build the app with me.
+
+
+             None of us had previous iOS development experience. Amie and Brian majored in communication design. Shane, a graduate CS student, studied system engineering at his undergraduate school. As product development newbies, we did not know how challenging the project was going to become until we dove in.
+
+           </p>
+
+
+           <div style = "text-align:center"> <img src = "ux_design.png" height="100%" > </div>
+
+
+           <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+             <span style = "font-size: 25px;font-weight:900;"> Functions & Capability </span><br><br>
+
+             - A homehub page that displays most traded player stocks and NBA latest news. <br><br>
+             - A portfolio carousel that stores currently owned player stocks <br><br>
+             - Stock prices fluctuate based on an algorithm that mathematically factors in players’ recent performance. <br><br>
+             - User can search for any NBA players in the database. <br><br>
+             - Real-time price and portfolio update  <br><br>
+
+
+           </p>
+
+
+
+           <img src = "nba-user-interface-mock-up.png" width = 100%>
+
+
+
+           <p style = "padding-left: 100px;padding-top: 100px;padding-bottom: 50px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+             <span style = "font-size: 25px;font-weight:900;"> Front-end Design </span><br><br></p>
+
+             <h5 style = "padding-left:100px;margin-bottom:15px;margin-top:-40px;">Color Spec </h5>
+             <div style = "margin-left: 100px;">
+               <div class = "colorWheel" style = "background-color:rgb(31,50,94);float:left"> </div>
+               <div class = "colorWheel" style = "background-color:rgb(179,39,54);margin-left: 40px;"> </div>
+
+             </div>
+
+             <h5 style = "padding-left:100px;margin-bottom:15px;"> Type Face</h5>
+             <h6 style = "padding-left:100px;margin-top:15px;font-size:14px;"> Gill Sans </h6>
+
+             <h5 style = "padding-left:100px;margin-bottom:15px;"> Prototyping Tool</h5>
+             <h6 style = "padding-left:100px;margin-top:15px;font-size:14px;"> Adobe XD</h6>
+
+             <p style = "margin-top:-50px;">NBA Fortune is a data-heavy game app. It has information on game statistics, stock price, transaction history, share volume, etc. Users could feel inundated with all those data. Therefore, making the app clean and easy to read was the main design principle. </p>
+
+
+             <div style = "margin-bottom:0px;">
+
+               <img src = "old-design.jpg" width =23% style = "padding-left:20%;">
+
+
+
+               <img src = "main_page.png" width = 23% style = "margin-left:15%;">
+
+             </div>
+
+             <p style = "margin-top:-50px;">We came up wtih two designs. The design on the left side is more visual while the one on the right has a more sleek look. We eventually chose the right one because its design is much cleaner. The gradient color makes the user interface look smooth and glossy. </p>
+
+
+
+             <img src = "nba-code-mock-up.png" width = 100%>
+
+             <p style = "padding-left: 100px;padding-top: 100px;padding-bottom: 50px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+               <span style = "font-size: 25px;font-weight:900;"> Back-end Engineering </span><br><br></p>
+
+               <h5 style = "padding-left:100px;margin-bottom:15px;margin-top:-40px;"> Language: <span style = "margin-top:15px;font-size:14px;"> Swift</span></h5>
+
+
+               <h5 style = "padding-left:100px;margin-bottom:15px;"> API: <span style = "margin-top:15px;font-size:14px;"> MySportsFeed & NBA RSS</span></h5>
+
+
+               <h5 style = "padding-left:100px;margin-bottom:0px;"> Database:   <span style = "margin-top:15px;font-size:14px;"> Firebase</span></h5>
+
+               <p style = "margin-top:-50px;">
+                 The software is written in Swift language on XCode. The two main technical challenges are player database management and stock price realtime updates. To get game statistics, the software sends API calls to MySportsFeed and parses returned JSON files.
+                 A player data model is implemented so that team members can program with the model-view-controller paradigm and access players' key variables in any swift file within the project. Meanwhile, the software stores and updates players'stock value, share volume, and users'portfolio value in Firebase. <br><br>
+
+                 Besides the above challenges, we also needed to divide the whole project into individual work streams robustly. Since it was my first time leading a product development team, I could have done a better job in breaking down the whole project into individual pieces. Only with an highly efficient division of tasks would the integration process be swift and easy.
+               </p>
+
+
+
+             </div>
+
+
+
+
+
+
+          <div id=rikai  class = "box">
+              <img class = "workPic" onclick = loadRikai() id = "workPic" src ="car_tree.jpg" style ="width:100%; height:100%;margin-top:0;">
+              <div class = "overlay">
+
+              </div>
+
+              <div class = "product-description">
+                      <p> Steering Wheel </p>
+                      <button onclick = loadRikai()> See Details </button>
+              </div>
+
+
+          </div>
+
+          <div class = "workText" id = "rikaiText" style = "display:none;width = 100%;height = 100%;background-color:white;z-index:2;">
+
+                     <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                      <!-- Overview<br> <br> -->
+                      <span style = "font-size: 20px;font-weight:900;"> Steering Wheel </span> is a website that curates heartfelt human conversations exchanged during Uber rides.
+
+                     </p>
+
+
+                     <div id = "UI" style = "background-color: rgb(221,220,220);text-align:center;"> <img src = "steering_wheel.png" height = 68% ></div>
+
+                     <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                       <span style = "font-size: 25px;font-weight:900;">Background </span><br><br>
+                     As a frequent user of the app Uber, I had the chance to meet many drivers who have interesting soul and strong character. They come from all walks of life. Among them are prolific artists, obsessive craftsmen, social workers, and undercover multi-millionaires. When they are off the wheel, they produce art and music, fight injustice and diseases, make jewelries, and run personal business. <br> <br>
+
+                    Through casual conversation, I learned their amazing life outside of vehicle. The laidback chat gave the digital app Uber some human touch. <br><br>
+
+                    To celebrate the human aspect of Uber, I built Steering Wheel to highlight some of the best conversation exchanges on the road.
+
+
+                     </p>
+
+
+                     <div style = "text-align:center"> <img src = "video.png" width="100%" > </div>
+
+
+                     <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                      <span style = "font-size: 25px;font-weight:900;"> Content </span><br><br>
+                       The website features multi-media original blog posts and videos. The blog posts cover mini-content series such as driver biography, conversation takeaways, and exclusive interviews.
+                       The intent of the blog posts is to celebrate human stories of everyday people like Uber drivers.
+                       Meanwhile, the blog provides a space for readers to muse on the meaning of life as they observe life journey of others. <br><br>
+
+                       In addition to blog posts, the website also hosts an original short-documentary that features the entrepreneurial paths of three Singaporean Uberpreneurs - Uber drivers who are also entrepreneurs. <br><br>
+
+                       To summarize, the whole site features the following content franchises:<br><br>
+
+                       <span style = "line-height:3.2;">
+                       1. <i>Driver Biography</i> <br>
+                       2. <i>Conversation Musing</i> <br>
+                       3. <i>Interviews with the Driver</i> <br>
+                       4. <i>UberPreneurs </i> <br>
+                      </span>
+
+                     </p>
+
+
+                     <img src = "ted-stage.jpg" width = "100%">
+                     <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                      <span style = "font-size: 25px;font-weight:900;"> Impact </span><br><br>
+
+                      As I continued to talk to my Uber drivers and create meaning content,  I got the opportunity to present a TED talk hosted by Washington University in St.Louis. Through the talk, I wanted to convey a simple message:
+                      <b>In this fast-paced world, we should still preserve our curiosity and take a moment to celebrate the lives around us.</b> <br><br>
+
+                      I was glad that the talk reached audience online, my parents and friends back home in China, teachers and students at my middle school, many others in my own communities. As the talk continues to gain its views, I use this talk to spread the positive message that humanity still endures in the digital era.
+
+         </div>
+
+
+
+         <div id = uber class = "box">
+           <img class = "workPic" onclick = loadUber() id = "workPic"src ="rikai.png" style ="width:125%; height:100%;margin-top:0;">
+           <div class = "overlay">
+
+           </div>
+
+           <div class = "product-description">
+                   <p> Rikai Labs  </p>
+                   <button onclick = loadUber()> See Details </button>
+           </div>
+         </div>
+         <div class = "workText" id = "uberText" style = "display:none;width = 100%;height = 100%;background-color:white;z-index:2;">
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                     <!-- Overview<br> <br> -->
+                     <span style = "font-size: 20px;font-weight:900;"> Genie English </span> is a chatbot that teaches Chinese young adults English on Wechat.
+
+                    </p>
+
+
+                    <div id = "UI" style = "background-color: whitesmoke;text-align:center;"> <img src = "genie_english.png" height = 68% ></div>
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                      <span style = "font-size: 25px;font-weight:900;">Background </span><br><br>
+
+                      As English as Second Language (ESL) market is booming in China, English lessons are also becoming more expensive. A private English lesson in the city of Shanghai can cost from 300 to 500 RMB per hour, a price unaffordable for many young English adults that want to learn English to improve their career prospect. <br><br>
+                      To make English lessons more accessible and convenient for Chinese young adults, I helped build English Genie when interning at Rikai Labs, an internet startup based in Shanghai.
+
+
+
+                    </p>
+
+
+                    <div style = "text-align:center"> <img src = "package.png" width="75%" > </div>
+
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                     <span style = "font-size: 25px;font-weight:900;"> Product Development </span><br><br>
+                     As a product development intern, I was responsible for developing interactive lesson content for Genie English. Once an ESL student myself, I emphasized with young adult English learners and designed lessons around their biggest struggle -  not having enough time for learning the language. <br><br>
+
+                     As life gets busier and harder in Shanghai,  the daily schedule for those young adults is highly fragmented. They rarely have uninterrupted, extended period of time for leisure and self-improvement. Even if they do happen to have small blocks of free time,  they usually escape to their social media - WeChat and Instagram. <br><br>
+
+
+                     Therefore, I decided to design short, memorable English lessons on the Wechat mini-program platform where users can fully engage with the lesson material and repeat learning multiple times a day.  The content was made interesting and engaging enough that they would spend at least 8 minutes per session when they are on a subway commute or wait in a line.
+
+
+
+                    </p>
+
+
+                    <div style = "text-align:center">
+                      <img src = "flashquiz.gif" width = 25% style = "margin-right:100px;">
+                      <img src = "video-lesson.gif" width = 25% style = "margin-left:10px;">
+
+                    </div>
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                     <span style = "font-size: 25px;font-weight:900;"> Content </span><br><br>
+
+                     At the time of the internship, I had a false notion that the only meaningful way to contribute to a digital product is by coding it. Therefore, I felt a bit inadequate because I did not have enough industry coding experience to write software for Genie English.
+                     But, developing lesson material for Genie English helped me realize that producing meaningful content can also make users excited about the product. <br><br>
+
+                     To support Genie English, I developed the following integrated content: <br><br>
+                     1. texting-based lessons on American popular culture and etiquette <br>
+                     2. automated chatbot scripting based on users’ input  <br>
+                     3. gamified quizzes and interactive exercises  <br>
+                     4. customized progress report <br>
+         </div>
+
+
+         <div id = gameWatch class = "box">
+           <img class = "workPic" onclick = loadWatch() id = "workPic"src ="gamewatch-cover.png" style ="width:125%; height:100%;margin-top:0;">
+           <div class = "overlay">
+
+           </div>
+
+           <div class = "product-description">
+                   <p> NBA GameWatch </p>
+                   <button onclick = loadWatch()> See Details </button>
+           </div>
+         </div>
+         <div class = "workText" id = "watchText" style = "display:none; width = 100%;height = 100%;background-color:white;z-index:2;">
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:-15%;">
+                     <!-- Overview<br> <br> -->
+                     <span style = "font-size: 20px;font-weight:900;"> NBA GameWatch </span> is a prove-of-concept watchOS app that notifies and engages NBA fans in the event of clutch games.
+                    </p>
+
+                    <div style = "text-align:center;background-color:transparent;">
+                      <img src = "watch-shell.png" width = 450px style = "padding:45px">
+                    </div>
+
+                    <div style = "text-align:center;position:relative;top:-405;z-index:;">
+                      <video width = 184px; controls = "controls" autoplay = "autoplay" loop = "loop" style = "z-index:;">
+                         <source src="watch-demo.mp4" type="video/mp4">
+                    </div>
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:-40%;margin-bottom:0px;">
+                      <span style = "font-size: 25px;font-weight:900;">Background </span><br><br>
+
+                      Summer after my junior year, I joined NBA Digital as a summer product intern and
+                      worked on NBA League Pass (an online subscription service that streams every available NBA game) and NBA App.
+                      One of the challenges that the digital team faces is to convert League Pass subscribers to use the app, particularly its fantasy & gaming portion - NBA Pick’Em. <br><br>
+
+                      NBA Pick’Em hosts a variety of prediction games. It sends fans daily questions asking them which team will win, whether or not a player will score above certain points,
+                      how many season total wins each team will have, etc. Like NCAA’s March Madness, NBA Pick’EM offers a digital gaming experience that engages its core basketball fanbase. <br><br>
+
+                      Since NBA League Pass has much more users than NBA Pick’Em, how to funnel league pass subscribers to NBA Pick’Em became a product problem that I wanted to explore.
+                      One solution was NBA GameWatch, a lite product that integrates NBA League Pass and NBA Pick’Em.
+
+
+
+                    </p>
+
+
+                    <div style = "text-align:center"> <img src = "game-watch-user-flow.png" width="100%" > </div>
+
+
+                    <p style = "padding: 100px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                         <span style = "font-size: 25px;font-weight:900;"> Business Requirement</span> <br><br>
+
+                      NBA GameWatch does two things. It notifies users of tight games during the final minutes and asks them to predict the winner.
+                      If the prediction is correct, users will be rewarded. <br><br>
+
+                      The product works by leveraging irresistible appeal of clutch games. Compared to landslide games, clutch games drive higher viewership and more fan engagement.  In the event of an evenly contested match-up, the suspense built around the game provides a compelling trigger that motivates viewers to speculate. Also, people often associate watch with time, a metaphsical entity of urgency and importance. During the intense final countdown, the haste and intensity would prompt users to take an immediate action naturally as both teams fight to win before the final buzzer beeps.<br><br>
+
+                      The overall business goals that NBA GameWatch seeks to achieve include: <br><br>
+
+
+
+
+                   <p style = "padding: 100px;font-size: 15px;margin-top:-20%;margin-bottom:0px;line-height:25px;">
+                        1. drive traffic to NBA Pick’Em from existing user base of other digital assets. <br><br>
+                        2. increase NBA Pick’Em game completion rate.   <br><br>
+                        3. expand the NBA League Pass audio subscriber base.  <br><br>
+                        4. launch/test a pilot NBA digital app on emerging wearable platforms.
+
+                   </p>
+
+
+                   <img src = "game-watch-show.png" width = 100% >
+
+
+
+
+
+                    <p style = "padding:100px;font-size: 15px;margin-top:0px;margin-bottom:0px;line-height:25px">
+                      <span style = "font-size: 25px;font-weight:900;"> Function Requirement </span><br><br><br>
+                      1. Watch face that notifies users in the event of clutch game. <br><br>
+                      2. Home page that displays tight match-ups, live scores, and time remaining. <br><br>
+                      3. Prediction view where users are prompted to predict the game outcome.   <br><br>
+                      4. Tune-in page that streams NBA League Pass audio and updates scoreboard. <br><br>
+                      5. Personalized performance ring that records total points earned.
+
+
+
+                    </p>
+
+                    <div style = "display:flex">
+                       <div class = "elements" style = "background:whitesmoke">
+                         <img src = "game-banner.png" width = 88%>
+                       </div>
+                       <div class = "elements" style = "background:floralwhite">
+                         <img src = "score-bar.png"  width = 88%>
+                       </div>
+                       <div class = "elements" style = "background:ghostwhite">
+                         <img src = "money-ring.png" width = 88%>
+                       </div>
+                    </div>
+                    <p style = "padding-left: 100px;padding-top: 100px;padding-bottom: 50px;font-size: 15px;margin-top:0px;margin-bottom:0px;">
+                      <span style = "font-size: 25px;font-weight:900;"> UI Design </span><br><br></p>
+
+                      <h5 style = "padding-left:100px;margin-bottom:15px;margin-top:-40px;">Color Spec </h5>
+                      <div style = "margin-left: 100px;display:flex">
+                        <div class = "colorWheel" style = "background-color:rgb(250,17,79);"> </div>
+                        <div class = "colorWheel" style = "background-color:rgb(255,149,0);"> </div>
+                        <div class = "colorWheel" style = "background-color:rgb(120,122,255);"> </div>
+                        <div class = "colorWheel" style = "background-color:rgb(255,230,32);"> </div>
+                        <div class = "colorWheel" style = "background-color:rgb(90,200,250);"> </div>
+                        <div class = "colorWheel" style = "background-color:rgb(242,244,255);"> </div>
+                      </div>
+
+                      <h5 style = "padding-left:100px;margin-bottom:15px;"> Type Face</h5>
+                      <h6 style = "padding-left:100px;margin-top:15px;font-size:14px;"> SF Pro Display Round</h6>
+
+                      <h5 style = "padding-left:100px;margin-bottom:15px;"> Prototyping Tool</h5>
+                      <h6 style = "padding-left:100px;margin-top:15px;font-size:14px;"> Adobe XD / Photoshop</h6>
+                      <p style = "margin-top:-50px;">
+                         Since NBA GameWatch is an upcoming gaming app on wearables, I instilled it with a futuristic look while maintaining its fun and interactivity. The dark background gives the app a sharp, modern finish while the rounded buttons, type face, and graphics together add a hint of playfulness. <br><br>
+
+                         <span style = "font-size: 19px;"><i>" Designing with contraints truly taught me 'less is more' " </i></span> <br><br>
+                         Due to the screen size of a watch, I had to be efficient with the design. However, designing with constraints truly taught me ‘less is more’. I used simple, intuitive icons and graphic visualization to communicate interface ideas. Besides the iconic NBA blue and red colors, NBA GameWatch is also tinted with a variety of colors that enhance its overall appeal. All elements have rounded corners in harmony with rounded edge of Apple Watch.
+
+
+
+                      </p>
+        </div>
+
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+ var i = 0;
+ var txt = "Hi, my name is Gary Wang! I build digital products." ;
+ var speed = 50;
+ var left = document.getElementsByClassName('leftColumn')[1];
+ var right  = document.getElementsByClassName('rightColumn')[1];
+ var pic1 = document.getElementsByClassName('box')[0];
+ var pic2 = document.getElementsByClassName('box')[1];
+ var pic3 = document.getElementsByClassName('box')[2];
+ var pic4 = document.getElementsByClassName('box')[3];
+ // var pic5 = document.getElementsByClassName('workPic')[4];
+ var text = document.getElementById('nba'); //text
+ var rikaiText = document.getElementById('rikaiText');
+ var uberText = document.getElementById('uberText');
+ var watchText =document.getElementById('watchText');
+ var rightBox =  document.getElementById('nba_fortune'); //cover
+ var uberButton = document.createElement("BUTTON");
+ var rikaiButton = document.createElement("BUTTON");
+ var watchButton = document.createElement("BUTTON");
+ // var rightRikaiBox = document.getElementById('rikai');
+
+ function typeWriter() {
+   if (i < txt.length) {
+     document.getElementById("name").innerHTML += txt.charAt(i);
+     i++;
+     setTimeout(typeWriter, speed);
+   }
+ }
+
+
+
+ function load(){
+
+   console.log("yes");
+
+   left.style.width = "22%";
+   right.style.width = "78%";
+   setTimeout(expand,800);
+
+ }
+
+ function expand (){
+
+   pic2.style.display = "none";
+   pic3.style.display = "none";
+   pic4.style.display = "none";
+
+   text.style.display = "block";
+   text.style.position ="relative";
+   window.location.href = "#nba";
+   document.getElementsByClassName('rightColumn')[1].style.scrollSnapType = "none";
+   document.getElementById('returnButton').style.display = "block";
+
+ }
+
+
+ function closeNBAFortune(){
+     console.log("yes");
+     window.location.href = "#nba_fortune";
+     setTimeout(recover,1250);
+ }
+
+
+ function recover(){
+
+   text.style.display = "none";
+   pic1.style.height = "100%";
+   pic2.style.display = "block";
+   pic3.style.display = "block";
+   pic4.style.display = "block";
+   left.style.width = "50%";
+   right.style.width = "50%";
+   document.getElementById('returnButton').style.display = "none";
+
+ }
+
+
+
+
+
+ function loadRikai(){
+
+   pic1.style.display = "none";
+   // rightBox.style.overflow = "hidden";
+   pic3.style.display = "none";
+   pic4.style.display = "none";
+
+   left.style.width = "22%";
+   right.style.width = "78%";
+
+  uberButton.innerHTML = "X";
+  uberButton.style.display = "block";
+  left.appendChild(uberButton);
+
+  setTimeout(expandRikai,800);
+
+ }
+
+
+ function expandRikai(){
+    rikaiText.style.display = "block";
+    rikaiText.style.position ="relative";
+    window.location.href = "#rikaiText";
+ }
+
+
+
+ uberButton.onclick = function(){
+   closeUber();
+ }
+
+
+ function closeUber(){
+
+   console.log("yes");
+   // window.location.href = "#rikai";
+   setTimeout(recoverUber,0);
+
+ }
+
+
+ function recoverUber(){
+
+   rikaiText.style.display = "none";
+   window.location.href = "#rikai";
+   // pic3.style.display = "block";
+   // pic4.style.display = "block";
+   // pic1.style.display = "block";
+   // window.location.href = "#rikai";
+   pic2.style.height = "100%";
+   left.style.width = "50%";
+   right.style.width = "50%";
+   pic3.style.display = "block";
+   pic4.style.display = "block";
+   pic1.style.display = "block";
+   uberButton.style.display = "none";
+
+ }
+
+
+
+
+
+
+ function loadUber(){
+
+
+   // rightBox.style.height = "50%"
+
+   pic1.style.display = "none";
+   pic2.style.display = "none";
+   pic4.style.display = "none";
+   left.style.width = "22%";
+   right.style.width = "78%";
+
+   rightBox.style.overflow = "hidden";
+
+   rikaiButton.innerHTML = "X";
+   rikaiButton.style.display = "block";
+   left.appendChild(rikaiButton);
+
+   setTimeout(expandUber,800);
+
+ }
+
+ function expandUber(){
+    uberText.style.display = "block";
+    uberText.style.position ="relative";
+    window.location.href = "#uberText";
+ }
+
+
+
+
+
+ rikaiButton.onclick = function(){
+   closeRikai();
+ }
+
+
+ function closeRikai(){
+
+   // window.location.href = "#uber";
+   setTimeout(recoverRikai,0);
+
+ }
+
+
+ function recoverRikai(){
+   uberText.style.display = "none";
+   pic1.style.display = "block";
+   pic2.style.display = "block";
+   pic4.style.display = "block";
+   window.location.href = "#uber";
+   pic3.style.height = "100%";
+   left.style.width = "50%";
+   right.style.width = "50%";
+   rikaiButton.style.display = "none";
+ }
+
+
+
+
+
+function loadWatch(){
+
+     pic1.style.display = "none";
+     pic2.style.display = "none";
+     pic3.style.display = "none";
+     left.style.width = "22%";
+     right.style.width = "78%";
+     rightBox.style.overflow = "hidden";
+
+
+     watchButton.innerHTML = "X";
+     watchButton.style.display = "block";
+     left.appendChild(watchButton);
+
+     setTimeout(expandWatch, 800);
+}
+
+
+function expandWatch(){
+   watchText.style.display = "block";
+   watchText.style.position ="relative";
+   window.location.href = "#watchText";
+}
+
+watchButton.onclick = function(){
+  closeWatch();
+}
+
+function closeWatch(){
+
+  console.log("yes");
+  // window.location.href = "#gameWatch";
+  setTimeout(recoverWatch,0);
+
+}
+
+
+function recoverWatch(){
+
+  watchText.style.display = "none";
+  pic1.style.display = "block";
+  pic2.style.display = "block";
+  pic3.style.display = "block";
+  window.location.href = "#gameWatch";
+  pic4.style.height = "100%";
+  left.style.width = "50%";
+  right.style.width = "50%";
+  watchButton.style.display = "none"
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
