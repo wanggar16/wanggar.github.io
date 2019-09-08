@@ -96,9 +96,9 @@ div.menu{
 .row {
   display: flex;
   height: 100%;
-  flex-direction: row;
+/*   flex-direction: row;
   -webkit-box-orient:horizontal;
-  align-items: stretch;
+  align-items: stretch; */
 
 
 }
