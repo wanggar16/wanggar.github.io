@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gallery</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Lato Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+     
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+     <!-- Stylesheet -->
+     <link href="css/gallery-materialize.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Prism -->
+    <link href="css/prism.css" rel="stylesheet">
+  </head>
+
+  <body class="doc">
+
+    <!-- Navbar and Header -->
+    <nav class="nav-extended">
+            <div class="nav-background">
+              <div class="pattern active" style="background-image: url('https://sonomacounty.ca.gov/uploadedImages/Sonoma/ISD/_Images/_Carousel/ISD_System_Banner_750.jpg?n=5070');"></div>
+            </div>
+            <div class="nav-wrapper container">
+              <a href="index.html" class="brand-logo"><i class="material-icons"></i>Gary Wang</a>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Write</a></li>
+                <li><a href="index-dark.html">Code</a></li>
+                <li><a href="speak.html">Speak</a></li>
+                <li class="active"><a href="document.html">About</a></li>
+                <!-- <li><a class='dropdown-trigger' href='#' data-target='feature-dropdown'>Features<i class="material-icons right">arrow_drop_down</i></a></li> -->
+              </ul>
+              <!-- Dropdown Structure -->
+              <ul id='feature-dropdown' class='dropdown-content'>
+                <li><a href="full-header.html">Fullscreen Header</a></li>
+                <li><a href="horizontal.html">Horizontal Style</a></li>
+                <li><a href="no-image.html">No Image Expand</a></li>
+              </ul>
+      
+              <div class="nav-header center">
+                <h5>“Imitation is suicide.”
+                        ― Ralph Waldo Emerson</h5>
+                <div class="tagline"></div>
+              </div>
+            </div>
+      
+            <!-- Fixed Masonry Filters -->
+            <!-- <div class="categories-wrapper">
+              <div class="categories-container">
+                <ul class="categories container">
+                  <li class="active"><a href="#all">All</a></li>
+                  <li><a href="#polygon">Web</a></li>
+                  <li><a href="#bigbang">Mobile</a></li>
+                </ul>
+              </div>
+            </div> -->
+          </nav>
+    <ul class="sidenav" id="nav-mobile">
+            <li><a href="index.html"><i class="material-icons">brush</i>Write</a></li>
+            <li><a href="index-dark.html"><i class="material-icons">code</i>Code</a></li>
+            <li><a href="speak.html"><i class="material-icons">speaker</i>Speak</a></li>
+            <li class="active" ><a href="document.html"><i class="material-icons">face</i>About</a></li>
+    </ul>
+  
+    <div class = "myrow">
+        <img id = "my-profile-pic" class = column src = img/code/gw.jpg style = "border-radius:50%;width: 150px;">
+        <div class = "center-wrapper column">
+           <p class= "self-intro"> Hello! Welcome to my portfolio site! My name is Gary Wang. I am currently a senior at Washington University in St.Louis. I create digital content & products related to sports, entertainment, and education technology. I love foreign languages and coding. Although speaking French and writing software in Javascript may seem two different activities, they both translate into my desire to communicate and connect with the world. 
+           </p>
+          <p class= "self-intro"><a href="file/Yu_Wang_Resume.pdf">View My Resume</a>
+           </p>
+        </div>
+    </div>
+     
+
+   
+    <!-- Core Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/color-thief.min.js"></script>
+    <script src="js/galleryExpand.js"></script>
+    <script src="js/docs-init.js"></script>
+
+  </body>
+</html>
